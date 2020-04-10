@@ -17,3 +17,8 @@ output "prefix" {
   value       = module.s3.prefix
   description = "Prefix configured for lifecycle rules"
 }
+
+output "enabled" {
+  value       = module.s3.enabled
+  description = "Is module enabled"
+}

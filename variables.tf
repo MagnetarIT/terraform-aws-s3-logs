@@ -144,3 +144,9 @@ variable "restrict_public_buckets" {
   default     = true
   description = "Set to `false` to disable the restricting of making the bucket public"
 }
+
+variable "enabled" {
+  type        = bool
+  default     = true
+  description = "Set to `false` to prevent the module from creating any resources"
+}

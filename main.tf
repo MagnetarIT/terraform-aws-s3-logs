@@ -11,6 +11,7 @@ data "aws_region" "current" {
 }
 
 resource "aws_s3_bucket" "default" {
+  count         = var.enabled ? 1 : 0
   bucket        = module.naming.id
   acl           = var.acl
   region        = var.region == "" ? data.aws_region.current.name : var.region
