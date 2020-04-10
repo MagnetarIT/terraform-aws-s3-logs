@@ -19,6 +19,17 @@ Terraform (>= 0.12.0) module to createan S3 bucket to be used for logs
 ## Example
 ```hcl
 
+provider "aws" {
+  region = "eu-west-2"
+}
+
+module "s3" {
+  source      = "git::https://github.com/MagnetarIT/terraform-aws-s3-logs.git?ref=tags/0.1.0"
+  namespace   = "mag"
+  environment = "test"
+  name        = "app"
+  attributes  = ["alb-logs"]
+}
 
 
 ```
