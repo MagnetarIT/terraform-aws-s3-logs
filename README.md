@@ -2,7 +2,7 @@
 
 
 # terraform-aws-s3-logs
-Terraform (>= 0.12.0) module to createan S3 bucket to be used for logs
+Terraform (>= 0.12.0) module to create an S3 bucket to be used for logs
 
 [![Build Status](https://dev.azure.com/MagnetarIT/terraform-aws-s3-logs/_apis/build/status/MagnetarIT.terraform-aws-s3-logs?branchName=master)](https://dev.azure.com/MagnetarIT/terraform-aws-s3-logs/_build/latest?definitionId=14&branchName=master) ![Latest Release](https://img.shields.io/github/release/MagnetarIT/terraform-aws-s3-logs.svg)
 
